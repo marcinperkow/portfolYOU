@@ -27,7 +27,9 @@ layout: page
   {%- endif -%}
 
 </p>
-
+{% if page.unity_dir %}
+   {% include page__unity.html %}
+{% endif %}
 {{ content }}
 
 {% if page.comments %}
